@@ -1,0 +1,55 @@
+.Education{
+    margin-top:9rem;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    .ct{
+        font-size: 2rem;
+        color: #6F6F6F;
+        font-weight: normal;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+    }
+    .certificate-item{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #6F6F6F;
+        border-radius: 50px;
+        &:last-child{
+            margin-bottom:0;
+        }
+        .certificate-t{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+            h1{
+                font-size: 1.5rem;
+                font-weight: normal;
+            }
+            h3{
+                font-size: 1rem;
+                color: #B292FF;
+            }
+            p{
+                font-size: 0.7rem;
+                font-weight: normal;
+                color: #6F6F6F;
+                span{
+                    color: #5FB9B0;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        button{
+            background: none;
+            border: none;
+            color: #5FB9B0;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+}

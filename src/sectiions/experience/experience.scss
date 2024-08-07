@@ -1,0 +1,45 @@
+.Experience{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    text-transform: capitalize;
+    margin-top: 6rem;
+    .E-right{
+        flex: 2;
+        .e-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            padding-left: 2rem;
+            p{
+                color: #6F6F6F;
+            }
+            h1{
+                font-size: 5rem;
+            }
+            .blur-bg{
+                position: absolute;
+                width: 200px;
+                height: 100px;
+                border-radius:10%;
+                filter: blur(100px);
+                z-index: -1;
+            }
+            .blur{
+                background: #6F6F6F;
+                top: 130%;
+            }
+        }
+    }
+    .E-left{
+        flex: 4;
+        width: 10px;
+        .e-down{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

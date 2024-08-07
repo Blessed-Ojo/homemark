@@ -1,0 +1,41 @@
+.navbar {
+    margin: 20px 0px;
+    background-color: #211f23;
+    border-radius: 100px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition:transform 4s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+        padding: 15px 15px;
+        li{
+            
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;               
+                color: #B292FF;
+                font-size: 20px;
+                transition:transform 0.5s ease;
+                &:hover{
+                    transform: scale(1.2);
+                }
+
+                .active-link {
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+        }
+    }
+}

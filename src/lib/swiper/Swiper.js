@@ -1,0 +1,22 @@
+export const data =[
+    {
+        img:'js.svg',
+        title:'JavaScript',
+    },
+    {
+        img:'react.svg',
+        title:'React',
+    },
+    {
+        img:'nodejs.svg',
+       title:'Node.js',
+    },
+    {
+        img:'sass.svg',
+        title:'Sass',
+    },
+    {
+        img:'tailwind.svg',
+        title:'Tailwind',
+    }
+]

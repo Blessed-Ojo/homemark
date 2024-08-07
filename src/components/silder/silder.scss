@@ -1,0 +1,29 @@
+.Swiper{
+    .Silder{
+        display: flex;
+        align-items: center;
+        padding: 10px 10px;
+        background-color: #B292FF;
+        margin: 30px 20px;
+        border-radius: 30px;
+        color: white;
+        width: 215px;
+        
+        h1{
+            font-size: 1.5rem;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10px;
+            padding: 0 40px;
+        }
+        img{
+            width: 6.5rem;
+            height: 6.5rem;
+            object-fit: cover;
+            padding: 20px 20px;
+        }
+    }
+}
