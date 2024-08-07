@@ -17,6 +17,7 @@ const Education = () => {
             <div className="certificate-t">
               <h1>{item.name}</h1>
               <h3>{item.tittle}</h3>
+              hj
               <p>
                 {item.date}<span> . </span>{item.text}
               </p>
