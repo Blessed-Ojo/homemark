@@ -10,11 +10,11 @@
         flex-direction: column;
         padding: 1rem 1rem;
         border: 3px solid #B292FF;
-        border-radius: 10px;
-        transition: transform 4s ease;
+        border-radius: 20px;
+        transition: transform 2s ease;
         &:hover{
             transform: scale(1.1);
-            box-shadow: 0 0 20px 1px #B292FF;
+            box-shadow: 0 0 20px 5px #B292FF;
 
         }
         &:first-child{
