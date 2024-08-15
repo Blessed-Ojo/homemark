@@ -1,24 +1,28 @@
 .navbar {
+    display: flex;
     margin: 20px 0px;
-    background-color: #211f23;
-    border-radius: 100px;
     height: 60px;
     position: fixed;
     top: 0;
     z-index: 100;
-    transition:transform 4s ease;
+    transition:transform 3s ease;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(0.9);
     }
     ul {
         display: flex;
         align-items: center;
+        background-color: #211f23;
+        border-radius: 100px;
         justify-content: center;
         list-style: none;
         gap: 20px;
         padding: 15px 15px;
         li{
-            
+            .active-link{
+                color: white;
+                font-weight: bold;
+            }
             a{
                 display: flex;
                 align-items: center;
@@ -26,16 +30,29 @@
                 text-decoration: none;               
                 color: #B292FF;
                 font-size: 20px;
-                transition:transform 0.5s ease;
+                transition:transform 0.3s ease;
                 &:hover{
-                    transform: scale(1.2);
-                }
-
-                .active-link {
-                    font-weight: bold;
-                    color: white;
+                    transform: scale(1.1);
                 }
             }
+        }
+    }
+    .cta{
+        margin-left: 1rem;
+        a{
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: #B292FF;
+            transition:transform 0.3s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+           
+
+        }
+        .active-link {
+            font-weight: bold;
+            color: white;
         }
     }
 }

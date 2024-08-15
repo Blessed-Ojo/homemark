@@ -13,17 +13,26 @@ const Navbar = () => {
     <nav className="navbar">
       <ul>
         <li>
-          <NavLink to="/" activeclassname="active-link">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
             Blessed Ojo
           </NavLink>
         </li>
         <li>
-          <NavLink to="/education" activeclassname="active-link">
+          <NavLink
+            to="/education"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
             Education
           </NavLink>
         </li>
         <li>
-          <NavLink to="experience" activeclassname="active-link">
+          <NavLink
+            to="experience"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
             Experience
           </NavLink>
         </li>
@@ -68,6 +77,14 @@ const Navbar = () => {
             <FaEnvelope size={25} />
           </a>
         </li>
+      </ul>
+      <ul className="cta">
+        <NavLink
+          to="contact me"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          Contact me
+        </NavLink>
       </ul>
     </nav>
   );
