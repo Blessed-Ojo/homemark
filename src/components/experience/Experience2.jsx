@@ -22,7 +22,7 @@ const Experience2 = () => {
             <div className="left">
               <h1>{item.name}</h1>
               <p>{item.xp} :</p>
-              <h4>{item.tittle}</h4>
+              <h4>{item.title}</h4>
             </div>
             <div className="right">
               <p>{item.text}</p>

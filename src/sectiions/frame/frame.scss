@@ -1,3 +1,4 @@
+@import '../../reponives.scss';
 .frame {
     display: flex;
     align-items: center;
@@ -5,7 +6,15 @@
     gap: 2rem;
     padding-top: 6rem;
     padding-bottom: 6rem;
-    /* === removing default button style ===*/
+    @include sm {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-items: start;
+        gap: 1rem;
+    }
+    
     .text {
         margin: 0;
         height: auto;
@@ -15,7 +24,7 @@
         cursor: pointer;
     }
 
-    /* button styling */
+   
     .text {
         --border-right: 6px;
         --text-stroke-color: rgba(255, 255, 255, 0.6);
@@ -30,7 +39,7 @@
         color: transparent;
         -webkit-text-stroke: 1px var(--text-stroke-color);
     }
-    /* this is the text, when you hover on button */
+   
     .hover-text {
         position: absolute;
         box-sizing: border-box;
@@ -43,10 +52,13 @@
         transition: 0.5s;
         -webkit-text-stroke: 1px var(--animation-color);
     }
-    /* hover */
+    
     .text:hover .hover-text {
         width: 100%;
         filter: drop-shadow(0 0 23px var(--animation-color));
+        @include sm{
+            width: 100%;
+        }
     }
 
 }

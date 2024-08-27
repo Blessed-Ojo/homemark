@@ -1,9 +1,16 @@
+@import '../../reponives.scss';
 .Tool-card {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 5rem;
     margin-bottom: 2rem;
+    @include sm{
+        display:flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        align-items: center;
+    }
     
     .cards{
         display: flex;
@@ -12,10 +19,18 @@
         border: 3px solid #B292FF;
         border-radius: 20px;
         transition: transform 2s ease;
+        @include sm{
+            align-items: center;
+            justify-content: center;
+        }
         &:hover{
             transform: scale(1.1);
             box-shadow: 0 0 20px 5px #B292FF;
-
+            @include sm{
+                &:hover{
+                    transform: scale(0.9);
+                }
+            }
         }
         &:first-child{
             height: fit-content;

@@ -1,3 +1,4 @@
+@import '../../reponives.scss';
 .Swiper{
     .Silder{
         display: flex;
@@ -7,10 +8,18 @@
         margin: 30px 20px;
         border-radius: 30px;
         color: white;
-        width: 215px;
+        width: 210px;
+        @include sm{
+            display: flex;
+            flex-direction: column;
+            margin: 30px -20px;
+        }
         
         h1{
             font-size: 1.5rem;
+            @include sm{
+                font-size: 1rem;
+            }
         }
         span{
             display: flex;
@@ -24,6 +33,11 @@
             height: 6.5rem;
             object-fit: cover;
             padding: 20px 20px;
+            @include sm{
+                width:5rem;
+                height: 5rem;
+                
+            }
         }
     }
 }

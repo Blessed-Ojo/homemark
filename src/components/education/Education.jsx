@@ -1,9 +1,8 @@
 import "./education.scss";
 import { pdfData } from "../../lib/edu";
-import { useState } from "react";
+
 
 const Education = () => {
-    const[openPDF , setOpenPDF] = useState(true);
 
     const handleViewCertificate = (file) => {
         setOpenPDF(file);
@@ -26,17 +25,6 @@ const Education = () => {
             </button>
           </div>
         ))}
-         {setOpenPDF && (
-        <div className="pdf-viewer">
-          <iframe
-            src={setOpenPDF}
-            width="100%"
-            height="600px"
-            title="Certificate"
-          />
-          <button onClick={() => setOpenPDF(true)}>Close</button>
-        </div>
-      )}
       </div>
      
     </div>

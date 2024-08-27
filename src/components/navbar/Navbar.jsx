@@ -4,11 +4,13 @@ import {
   FaGithub,
   FaLinkedin,
   FaDiscord,
-  FaTiktok,
   FaEnvelope,
 } from "react-icons/fa";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <ul>
@@ -64,15 +66,6 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a
-            href="https://www.tiktok.com/@your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTiktok size={25} />
-          </a>
-        </li>
-        <li>
           <a href="mailto:your-email@example.com">
             <FaEnvelope size={25} />
           </a>
@@ -86,6 +79,66 @@ const Navbar = () => {
           Contact me
         </NavLink>
       </ul>
+      {/* moblie menu */}
+      <div className="menuIcon">
+      <img
+            src="/menu.png"
+            alt=""
+            onClick={() => setOpen((prev) => !prev)}
+          />
+      </div>
+      <div className={open ? "menu active" : "menu"
+      }>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          BlessedOjo
+        </NavLink>
+        <NavLink
+          to="/education"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          Education
+        </NavLink>
+        <NavLink
+          to="experience"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          Experience
+        </NavLink>
+        <a
+          href="https://github.com/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub size={40} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin size={40} />
+        </a>
+        <a
+          href="https://discord.com/invite/your-invite"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaDiscord size={40} />
+        </a>
+        <a href="mailto:your-email@example.com">
+          <FaEnvelope size={40} />
+        </a>
+        <NavLink
+          to="contact me"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+        Contactme
+        </NavLink>
+      </div>
+     
     </nav>
   );
 };

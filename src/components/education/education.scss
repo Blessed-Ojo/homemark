@@ -1,8 +1,15 @@
+@import '../../reponives.scss';
 .Education{
     margin-top:9rem;
     margin-bottom: 5rem;
     margin-right: 5rem;
     margin-left: 5rem;
+    @include sm{
+     margin-top:4rem;
+     margin-bottom: 5rem;
+     margin-right: auto;
+     margin-left: auto;
+    }
     .ct{
         font-size: 2rem;
         color: #6F6F6F;
@@ -11,6 +18,9 @@
         padding-top: 1rem;
         padding-bottom: 15px;
         text-transform: uppercase;
+        @include sm{
+            padding-bottom: 20px;
+        }
     }
     .certificate-item{
         display: flex;
@@ -19,6 +29,9 @@
         margin-bottom: 2rem;
         border: 1px solid #b292ff;
         border-radius: 50px;
+        @include sm{
+            padding: 1.7rem;
+        }
         &:last-child{
             margin-bottom:0;
         }
@@ -29,10 +42,16 @@
             h1{
                 font-size: 1.5rem;
                 font-weight: normal;
+                @include sm{
+                    font-size: 1.3rem;
+                }
             }
             h3{
                 font-size: 1rem;
                 color: #B292FF;
+                @include sm{
+                    font-size: 0.8rem;
+                }
             }
             p{
                 font-size: 0.7rem;
@@ -50,6 +69,11 @@
             color: #5FB9B0;
             font-size: 1.2rem;
             cursor: pointer;
+            @include sm{
+                font-size: 1rem;
+                
+                
+            }
         }
     }
 }

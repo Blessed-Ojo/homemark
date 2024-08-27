@@ -1,9 +1,14 @@
+@import '../../reponives.scss';
 .Experience{
     display: flex;
     justify-content: space-between;
     align-self: center;
     text-transform: capitalize;
     margin-top: 6rem;
+    @include sm{
+        margin-top: 10px;
+        display: block;
+    }
     .E-right{
         flex: 2;
         .e-text{
@@ -35,11 +40,9 @@
     .E-left{
         flex: 4;
         width: 10px;
-        .e-down{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
+        @include sm{
+            width: 420px;  
         }
+        
     }
 }

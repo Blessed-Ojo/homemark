@@ -1,7 +1,12 @@
+@import '../../reponives.scss';
 .Worktool {
     .text-t {
         font-size: 2rem;
         color: #c8c8c8;
         text-transform: capitalize;
+        @include sm {
+            text-align: center;
+            font-size: 1.8rem
+        }
     }
 }

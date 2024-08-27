@@ -1,3 +1,5 @@
+@import "../../reponives.scss";
+
 .navbar {
     display: flex;
     margin: 20px 0px;
@@ -5,10 +7,16 @@
     position: fixed;
     top: 0;
     z-index: 100;
-    transition:transform 3s ease;
-    &:hover{
+    transition: transform 3s ease;
+
+    &:hover {
         transform: scale(0.9);
+
+        @include sm {
+            transform: none;
+        }
     }
+
     ul {
         display: flex;
         align-items: center;
@@ -18,41 +26,126 @@
         list-style: none;
         gap: 20px;
         padding: 15px 15px;
-        li{
-            .active-link{
+
+        @include sm {
+            display: none;
+        }
+
+        li {
+            .active-link {
                 color: white;
                 font-weight: bold;
             }
-            a{
+
+            a {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                text-decoration: none;               
-                color: #B292FF;
+                text-decoration: none;
+                color: #b292ff;
                 font-size: 20px;
-                transition:transform 0.3s ease;
-                &:hover{
+                transition: transform 0.3s ease;
+
+                &:hover {
                     transform: scale(1.1);
                 }
             }
         }
     }
-    .cta{
+
+    .cta {
         margin-left: 1rem;
-        a{
+
+        a {
             text-decoration: none;
             font-size: 1.3rem;
-            color: #B292FF;
-            transition:transform 0.3s ease;
-            &:hover{
+            color: #b292ff;
+            transition: transform 0.3s ease;
+
+            &:hover {
                 transform: scale(1.1);
             }
-           
-
         }
+
         .active-link {
             font-weight: bold;
             color: white;
         }
     }
+
+    .menuIcon {
+        display: none;
+        z-index: 999;
+
+        @include sm {
+            display: block; 
+            position: relative;
+            top: 1px;
+            right: 170px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 5px solid #b292ff;
+            border-radius: 50px;
+        }
+    }
+
+    .menu {
+        display: none;
+
+        @include sm {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            border-radius: 50px;
+            right: -500px;
+            background-color: #211f23;
+            padding:1rem 4rem 1rem 4rem;
+            gap: 1rem;
+            width: 420%;
+            align-items: center;
+            border: 5px solid#b292ff;
+            letter-spacing: 0.1rem;
+            z-index: 99;
+            transition: all 1s ease;
+            &.active {  
+                right: 0;
+            }
+        }
+    }
+        a {
+            text-decoration: none;
+            color: #b292ff;
+            font-family:cursive;
+            font-size: 20px;
+            font-weight: 900;
+            padding: 0.5rem;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .active-link {
+            font-weight: bold;
+            color: white;
+        }
+
+        @include sm {
+            display: inline;
+        }
+    
+
+    @include sm {
+        a {
+            display: initial;
+        }
+    }
+
 }
