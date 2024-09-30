@@ -1,7 +1,7 @@
 export const xpdata = [
    {
       name: 'Front-end Software Engineer',
-      link: 'link',
+      link: 'https://real-estate-d.pages.dev/',
       text: 'Estate web',
       image: 'estate.png',
       xp: 'Personal-project',
@@ -18,7 +18,7 @@ export const xpdata = [
     
     {
       name: 'Front-end Software Engineer',
-      link: 'link',
+      link: 'https://nike-nu-blue.vercel.app',
       text: 'Nike-Shoe web',
       image: 'nike.png',
       xp: 'Personal-project',
@@ -27,7 +27,7 @@ export const xpdata = [
     
     {
       name: 'Front-end Software Engineer',
-      link: 'link',
+      link: 'https://acme-rockets-rtc5.onrender.com',
       text: 'Rocket-shop web',
       image: 'rockets.png',
       xp: 'Personal-project',
@@ -36,7 +36,7 @@ export const xpdata = [
     
     {
       name: "Front-end Software Engineer",
-      link: "link",
+      link: "https://prince-real-estate.vercel.app/",
       text: "Real-Estate web",
       image: "pestate.png",
       xp: "Personal-project",
