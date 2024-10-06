@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="smimg"
         >
            <LazyLoadImage
-              src="profile.png" alt="" 
+              src="simg.png" alt="" 
               effect="blur" 
            />
         </div>
