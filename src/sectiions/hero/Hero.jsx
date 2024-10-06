@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./hero.scss";
 import { useNavigate } from "react-router-dom";
 const Hero = () => {
@@ -10,7 +11,10 @@ const Hero = () => {
     <div className="Hero">
       <div className="right">
         <div className="smimg">
-          <img src="smimg.png" alt="" />
+           <LazyLoadImage
+              src="profile.png" alt="" 
+              effect="blur" 
+           />
         </div>
         <div className="h-texts">
           <h1>Hi,i'm ojo blessed</h1>

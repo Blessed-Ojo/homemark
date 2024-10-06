@@ -19,9 +19,8 @@ const Silder = () => {
           <div className="Silder">
             <span>
             <img src={item.img} />
-            
             </span>
-            <h1>{item.title}</h1>
+            <h3>{item.title}</h3>
           </div>
         </SwiperSlide>
       ))}

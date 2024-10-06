@@ -20,8 +20,10 @@ const Education = () => {
                 {item.date}<span> . </span>{item.text}
               </p>
             </div>
-            <button onClick={() => handleViewCertificate(item.file)}>
+            <button>
+              <a href={item.file}>
               View Certificate
+              </a>
             </button>
           </div>
         ))}

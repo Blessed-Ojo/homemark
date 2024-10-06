@@ -24,13 +24,17 @@
     }
     .certificate-item{
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        border: 1px solid #b292ff;
+        padding: 2.8rem;
+        margin-bottom: 3rem;
+        background: #000;
         border-radius: 50px;
+        
         @include sm{
-            padding: 1.7rem;
+            margin-bottom: 5rem;
+            padding: 1.6rem;
+          
         }
         &:last-child{
             margin-bottom:0;
@@ -66,9 +70,12 @@
         button{
             background: none;
             border: none;
-            color: #5FB9B0;
-            font-size: 1.2rem;
-            cursor: pointer;
+            a{
+                text-decoration: none;
+                color: #5FB9B0;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
             @include sm{
                 font-size: 1rem;
                 
@@ -76,4 +83,26 @@
             }
         }
     }
+   
+    .certificate-item::after,.certificate-item::before{
+        
+        content: "";
+        position: absolute;
+        left: 10%;
+        background-image: conic-gradient( #B292FF,#5FB9B0,#B292FF,#5FB9B0,#B292FF);
+        padding: 2rem;
+        width:75%;
+        height: 15%;
+        z-index: -1;
+        border-radius: 50px;
+        @include sm{
+            width: 70%;
+            height: 8%;
+        }
+    }
+    .certificate-item::before{
+        filter: blur(1.3rem);
+        opacity: 0.5;
+    }
+  
 }
