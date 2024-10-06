@@ -1,4 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion"
 import "./hero.scss";
 import { useNavigate } from "react-router-dom";
 const Hero = () => {
@@ -10,7 +11,8 @@ const Hero = () => {
   return (
     <div className="Hero">
       <div className="right">
-        <div className="smimg">
+        <div className="smimg"
+        >
            <LazyLoadImage
               src="profile.png" alt="" 
               effect="blur" 
