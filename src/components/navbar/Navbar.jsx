@@ -40,7 +40,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/your-profile"
+            href="https://github.com/Blessed-Ojo"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -49,7 +49,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://linkedin.com/in/ojo-blessed-01571731a"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,16 +57,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a
-            href="https://discord.com/invite/your-invite"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaDiscord size={25} />
-          </a>
-        </li>
-        <li>
-          <a href="mailto:your-email@example.com">
+          <a href="mailto:ojoblessed533@gmail.com">
             <FaEnvelope size={25} />
           </a>
         </li>
@@ -108,27 +99,20 @@ const Navbar = () => {
           Experience
         </NavLink>
         <a
-          href="https://github.com/your-profile"
+          href="https://github.com/Blessed-Ojo"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub size={40} />
         </a>
         <a
-          href="https://www.linkedin.com/in/your-profile"
+          href="https://linkedin.com/in/ojo-blessed-01571731a"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedin size={40} />
         </a>
-        <a
-          href="https://discord.com/invite/your-invite"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaDiscord size={40} />
-        </a>
-        <a href="mailto:your-email@example.com">
+        <a href="mailto:ojoblessed533@gmail.com">
           <FaEnvelope size={40} />
         </a>
         <NavLink
