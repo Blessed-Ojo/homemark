@@ -4,8 +4,9 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background: url(big.png) no-repeat;
+  background-image: url(big.png);
   background-size: 30rem;
+  background-repeat: no-repeat;
   background-position-x: 45rem;
   text-transform: capitalize;
   @include sm{
