@@ -7,7 +7,7 @@
     margin: 10rem 0px;
     text-transform: capitalize;
     @include sm{
-        margin: 5rem 0px; 
+        margin: 5rem 0; 
     }
     
     .Experience-text {
@@ -16,33 +16,39 @@
         span {
             font-size: 1.5rem;
         }
+        @include sm{
+            span{
+                font-size: 1.2rem;
+            }
+        }
     }
     .experince-wapper {
         margin-top: 3rem;
+        @include sm{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .experince-item {
             display: flex;
             align-items: start;
             justify-content: space-between;
-            background: black;
-            border: 2px solid #b292ff;
+            border:  4px solid #b292ff;
             border-radius: 50px;
             width: 60rem;
             margin-bottom: 3rem;
             padding: 2rem;
             cursor: pointer;
             transition: transform 0.3s ease;
+
             @include sm{
                 display: flex;
                 flex-direction: column;
-                width: auto;
+                align-items: center;
+                width:90%;
                
             }
-            &:hover {
-                transform: scale(0.8);
-            }
-            &:last-child {
-                margin-bottom: 0;
-            }
+           
             .left {
                 padding: 1rem;
                 gap: 2rem;
@@ -51,6 +57,7 @@
                     padding-bottom: 1rem;
                     @include sm{
                         text-align: center;
+                        font-size: 1.2rem;
                     }
                 }
                 p{
@@ -61,7 +68,7 @@
                     font-size: 1.7rem;
                     font-weight: 400;
                     @include sm{
-                       font-size: 1.5rem;
+                       font-size: 1rem;
                        width: auto;
                     }
                 }
@@ -71,11 +78,14 @@
                 display: flex;
                 flex-direction: column;
                 align-items: start;
-                gap: 1rem;
+                gap: 0.3rem;
                 p{
                     color: #b292ff;
                     font-size: 1.5rem;
                     text-transform: capitalize;
+                    @include sm{
+                        font-size: 1.2rem;
+                    }
                 }
                 img {
                     width: 550px;
@@ -84,7 +94,7 @@
                     border: 2px solid #b292ff;
                     border-radius: 10px;
                     @include sm{
-                        width:25rem;
+                        width:350px;
                         object-fit: cover;
                     }
                 }
