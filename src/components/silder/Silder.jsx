@@ -8,8 +8,7 @@ const Silder = () => {
     <Swiper
       modules={[Pagination, Scrollbar, A11y]}
       spaceBetween={9}
-      slidesPerView={3}
-      pagination={{clickable: true }}
+      slidesPerView={2}
       onSwiper={(Swiper) => console.log(Swiper)}
       onSlideChange={() => console.log("slide change")}
       className="Swiper"
